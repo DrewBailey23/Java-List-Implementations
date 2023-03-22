@@ -221,38 +221,4 @@ public class SortedList<T extends Comparable<? super T>> implements Comparable<S
             this.add(array[x]);
         }
     }
-    
-    
-    public static void main(String [] args)
-    {
-        SortedList<Integer> list = new SortedList<Integer>();
-        SortedList<String> list2 = new SortedList<String>();
-        list2.add("aaa");
-        list2.add("bbb");
-        list2.add("aa");
-        System.out.println(list2);
-        
-        Integer[] arr = {9, 5, 2, 7, 4, 1, 9, 0, 43, 6, 4, 63, 87};
-        
-        for(int x = 0; x < 13; x++)
-        {
-            list.add(arr[x]);
-        }
-        
-        System.out.println(list + " " + list.size());
-        
-        SortedList<Integer> list3 = new SortedList<Integer>();
-        list3.add(2);
-        list3.add(1);
-        list3.add(3);
-        list3.add(0);
-        
-        SortedList<Integer> list4 = new SortedList<Integer>();
-        list4.add(0);
-        list4.add(1);
-        list4.add(2);
-        list4.add(3);
-        list.addAll(arr);
-        System.out.println(list);
-    }
 }
