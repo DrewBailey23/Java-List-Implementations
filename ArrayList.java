@@ -139,17 +139,4 @@ public class ArrayList
         str += "]";
         return str;
     }
-    public static void main(String [] args)
-    {
-        ArrayList list = new ArrayList();
-        list.add("One");
-        list.add("Two");
-        System.out.println(list);
-        ArrayList list2 = new ArrayList();
-        list2.add("Seven");
-        list2.add("Why am i up at 3");
-        System.out.println(list2);
-        list.addAll(list2);
-        System.out.println(list);
-    }
 }
